@@ -18,7 +18,8 @@
 
 import * as tfc from '@tensorflow/tfjs-core';
 import {loadFrozenModel, FrozenModel} from '@tensorflow/tfjs-converter';
-import {SCAVENGER_CLASSES} from './scavenger_classes';
+// import {SCAVENGER_CLASSES} from './scavenger_classes';
+import {SCAVENGER_CLASSES} from './my_scavenger_classes'; // my model
 
 
 type TensorMap = {[name: string]: tfc.Tensor};
