@@ -38,7 +38,7 @@ Dockerfiles are in `training` directory.
 Prepare images for training by dividing them into directories for each label
 name that you want to train.
 For example: the directory structure for training *cat* and *dog* will look as
-follows assuming image data is stored under `data/images`.
+follows assuming image data is stored under `data/images` (see my_resources/data).
 
 ```
 data
@@ -65,7 +65,7 @@ $ docker run -v /path/to/data:/data -it model-builder
 After the training is completed, you'll see three files in the
 `data/saved_model_web` directory:
 
-- web_model.pb (the dataflow graph)
+- web_model.pb (the dataflow graph. It generates a file named tensorflowjs.pb that must be renamed to web_model.pb) 
 - weights_manifest.json (weight manifest file)
 - group1-shard\*of\* (collection of binary weight files)
 
@@ -75,7 +75,7 @@ You can build your own game using your own custom image recognition model by rep
 the corresponding files under the `dist/model/` directory with the newly generated ones.
 
 You also need to update `src/js/scavenger_classes.ts` in order to update the
-label outputs from the custom model with human-readable strings.
+label outputs from the custom model with human-readable strings (see my_resources/src/js/scavenger_classes.ts).
 Update the game logic in `src/js/game.ts` if needed.
 
 ### Using GPU
@@ -84,7 +84,7 @@ If you want to use the GPU for training, install
 [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) and run:
 ```
 $ cd training
-$ nvidia-docker build -f Dockerfile.gpu model-builder
+$ nvidia-docker build -f Dockerfile.gpu model-builder #(it doesn't work actually)
 $ nvidia-docker run -v /path/to/data:/data -it model-builder
 ```
 
