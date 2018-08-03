@@ -28,6 +28,7 @@ import * as tfc from '@tensorflow/tfjs-core';
 import {SPEECH_SPRITE_TIMESTAMPS} from './speech_sprite_timestamps';
 import {EmojiItem, EMOJIS_LVL_1, EMOJIS_LVL_2, EMOJIS_LVL_3, EMOJIS_LVL_4,
      EMOJIS_LVL_5, EMOJIS_LVL_DEMO} from './game_levels';
+import {EMOJIS_LVL_0} from './my_game_level';
 
 export const GAME_START_TIME = 20;
 export const GAME_EXTEND_TIME = 10;
@@ -90,6 +91,7 @@ export class Game {
   timerInterval: number;
   /** Speak interval for reading out objects from the camera every x seconds. */
   speakInterval: number;
+  emojiLvl0: Array<EmojiItem>;
   emojiLvl1: Array<EmojiItem>;
   emojiLvl2: Array<EmojiItem>;
   emojiLvl3: Array<EmojiItem>;
@@ -150,7 +152,8 @@ export class Game {
     this.emojiLvl3 = shuffle(EMOJIS_LVL_3);
     this.emojiLvl4 = shuffle(EMOJIS_LVL_4);
     this.emojiLvl5 = shuffle(EMOJIS_LVL_5);
-    this.emojiLvlDemo = Array.from(EMOJIS_LVL_DEMO);
+    // this.emojiLvlDemo = Array.from(EMOJIS_LVL_DEMO);
+    this.emojiLvlDemo = Array.from(EMOJIS_LVL_0);
 
     this.emojiLvlLookup = {
       '1': this.emojiLvl1,
