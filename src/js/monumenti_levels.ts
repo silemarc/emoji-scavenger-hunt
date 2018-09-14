@@ -20,13 +20,28 @@ import {EmojiItem} from './game_levels';
 
 export const EMOJIS_LVL_0: Array<EmojiItem> = [
     {
-        'name': 'pc',
-        'emoji': '💻',
-        'path': '/img/emojis/game/laptop.svg'
+        'name': 'san_lucifero',
+        'emoji': '🏢',
+        'path': '/img/emojis/game/building.svg'
     },
     {
-        'name': 'monitor',
-        'emoji': '📺',
-        'path': '/img/emojis/game/tv.svg'
+        'name': 'san_saturnino',
+        'emoji': '🏠',
+        'path': '/img/emojis/game/house.svg'
+    },
+    {
+        'name': 'san_lucifero_lato',
+        'emoji': '🏢',
+        'path': '/img/emojis/game/building.svg'
+    },
+    {
+        'name': 'croce_giurisdizionale',
+        'emoji': '🔑',
+        'path': '/img/emojis/game/key.svg'
+    },
+    {
+        'name': 'spam',
+        'emoji': '🚽',
+        'path': '/img/emojis/game/toilet.svg'
     }
 ];

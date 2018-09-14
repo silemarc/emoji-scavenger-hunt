@@ -28,7 +28,7 @@ import * as tfc from '@tensorflow/tfjs-core';
 import {SPEECH_SPRITE_TIMESTAMPS} from './speech_sprite_timestamps';
 import {EmojiItem, EMOJIS_LVL_1, EMOJIS_LVL_2, EMOJIS_LVL_3, EMOJIS_LVL_4,
      EMOJIS_LVL_5, EMOJIS_LVL_DEMO} from './game_levels';
-import {EMOJIS_LVL_0} from './my_game_level';
+import {EMOJIS_LVL_0} from './monumenti_levels';
 
 export const GAME_START_TIME = 20;
 export const GAME_EXTEND_TIME = 10;
