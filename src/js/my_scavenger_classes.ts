@@ -16,7 +16,10 @@
  * =============================================================================
  */
 
-export const SCAVENGER_CLASSES: {[key: number]: string} = {
-    0: 'pc',
-    1: 'monitor',
-}
+export const SCAVENGER_CLASSES: { [key: number]: string } = {
+    0: 'san saturnino',
+    1: 'san lucifero lato',
+    2: 'croce giurisdizionale',
+    3: 'san lucifero',
+    4: 'spam'
+};
